@@ -1,0 +1,219 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #69F7BE;
+  --color-text-main: #000000;
+  --color-primary: #FFFF00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  font-family:  Georgia, serif;
+  margin: 2em; 
+  background-color: lightgray;
+  color: darkblue; 
+  text-align:center; 
+}
+
+button {
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor:pointer; 
+}
+
+/**
+img{
+  width: 100px; 
+  height: 100px;
+  
+}
+**/
+
+button:hover{
+    border: 1px solid black; 
+    box-shadow: inset 0px 0px 0px 1px black;
+    box-sizing: border-box; 
+}
+
+/* hides the End button */ 
+.hidden{
+  display: none; 
+}
+
+/*game buttons styling*/ 
+#gameButtonArea> button{
+  width:200px;
+  height:200px;
+  margin:2px;
+}
+
+/*button colors*/ 
+#bt1{
+  background-color: lightgreen; 
+}
+
+
+#bt2{
+  background-color: lightblue; 
+}
+
+#bt3{
+  background-color: pink; 
+}
+
+#bt4{
+  background-color: lightyellow;  
+}
+
+#bt5{
+  background-color: plum;
+  
+}
+
+#bt6{
+  background-color: lightsalmon; 
+}
+
+#bt7{
+  background-color: lightcyan; 
+}
+
+#bt8{
+  background-color: tan; 
+}
+
+/*color when buttons are clicked*/ 
+#bt1:active, #bt1.lit{
+  background-color: green; 
+}
+
+#bt2:active, #bt2.lit{
+  background-color:blue; 
+}
+
+#bt3:active, #bt3.lit{
+  background-color: red; 
+}
+
+#bt4:active, #bt4.lit{
+  background-color:yellow; 
+}
+
+#bt5:active, #bt5.lit{
+  background-color: purple; 
+}
+
+#bt6:active, #bt6.lit{
+  background-color: orangered;
+}
+
+#bt7:active, #bt7.lit{
+  background-color: cyan; 
+}
+
+#bt8:active, #bt8.lit{
+  background-color: sienna; 
+}
+
+
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+/* header - Memory Game */
+.title {
+  color: Black;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100%;
+  margin: 0;
+  text-align:center; 
+}
+
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+}
+
+/* Button - Add it from the README instructions 
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+*/
+
+/* Button dip
+- Toggling this class on and off will move it down and up again
+- The button transition property above determines the speed of the translate (500ms)
+
+.dipped {
+  transform: translateY(5px);
+}
+*/
