@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+
+    <title>Memory Game</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Memory Game" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- for font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+
+
+    <!-- The wrapper and content divs set margins and positioning -->
+    <div class="wrapper">
+      <div class="content" role="main">
+        <!-- This is the start of content for our page -->
+        <h1 class="title">Memory and Sound Game</h1>
+
+    
+        <!-- Instructions on using this project -->
+        <div class="body">
+          
+          <p>
+            <strong>Welcome!</strong>
+          </p>
+          <p>
+            Repeat back the pattern shown to win the game in 60 secs! You can only make 2 mistakes! 
+          </p>
+         
+          <!-- start and end buttons--> 
+          <button id="startBtn" onclick="startGame()">Start</button>
+          <button class = "hidden" id="endBtn" onclick="stopGame()">
+            End
+          </button>
+          
+          <p id ="timer">
+            
+            Timer: 60<!--span id="timer">0</span> seconds remaining -->
+          </p>
+        <!-- buttons for the game (8 total) --> 
+          <div id="gameButtonArea">
+            
+              <button id="bt1" onclick="guess(1)" onmousedown ="startTone(1)" onmouseup="stopTone()"></button>
+              <button id="bt2" onclick="guess(2)" onmousedown ="startTone(2)" onmouseup="stopTone()"></button>
+              <button id="bt3" onclick="guess(3)" onmousedown ="startTone(3)" onmouseup="stopTone()"></button>
+              <button id="bt4" onclick="guess(4)" onmousedown ="startTone(4)" onmouseup="stopTone()"></button>
+            
+              <br/>
+            
+              <button id="bt5" onclick="guess(5)" onmousedown ="startTone(5)" onmouseup="stopTone()">
+               <!-- <img src = "https://live.staticflickr.com/3705/13492658484_a58dd56c59.jpg">-->
+              </button>
+              <button id="bt6" onclick="guess(6)" onmousedown ="startTone(6)" onmouseup="stopTone()" ></button>
+              <button id="bt7" onclick="guess(7)" onmousedown ="startTone(7)" onmouseup="stopTone()" ></button>
+              <button id="bt8" onclick="guess(8)" onmousedown ="startTone(8)" onmouseup="stopTone()" ></button>  
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </body>
+</html>
