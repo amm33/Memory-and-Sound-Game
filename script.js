@@ -90,13 +90,16 @@ function startTone(btn){
     context.resume()
     tonePlaying = true
   }
+  
 }
 
 //ends tone
 function stopTone(){
   g.gain.setTargetAtTime(0,context.currentTime + 0.5, 0.025)
   tonePlaying = false 
+  
 }
+
 
 //initialization 
 var AudioContext = window.AudioContext || window.webkitAudioContext
@@ -110,12 +113,18 @@ o.start(0)
 
 //lighting the button 
 function lightButton(btn){
-  document.getElementById("bt" + btn).classList.add("lit")
+  document.getElementById("bt" + btn).classList.add("lit");
+  //shows image when button is lit 
+  showImage(btn);
+  //document.getElementById("img1").classList.remove("hidden")
+  
 }
 
 //clearing the button 
 function clearButton(btn){
-  document.getElementById("bt" + btn).classList.remove("lit")
+  document.getElementById("bt" + btn).classList.remove("lit");
+  //hides image when button is not lit 
+  hideImage(btn); 
 }
 
 //playing single clue 
@@ -175,4 +184,16 @@ function guess(btn){
       loseGame(); 
     }
 }
+}
+
+//image functions!
+
+//shows the function when button is clicked 
+function showImage(btn){
+  document.getElementById("image" + [btn]).style.visibility = "visible"; 
+}
+
+//hides function when button is not clicked 
+function hideImage(btn){
+  document.getElementById("image" + [btn]).style.visibility = "hidden"; 
 }

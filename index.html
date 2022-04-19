@@ -45,7 +45,6 @@
   </head>
   <body>
 
-
     <!-- The wrapper and content divs set margins and positioning -->
     <div class="wrapper">
       <div class="content" role="main">
@@ -76,19 +75,36 @@
         <!-- buttons for the game (8 total) --> 
           <div id="gameButtonArea">
             
-              <button id="bt1" onclick="guess(1)" onmousedown ="startTone(1)" onmouseup="stopTone()"></button>
-              <button id="bt2" onclick="guess(2)" onmousedown ="startTone(2)" onmouseup="stopTone()"></button>
-              <button id="bt3" onclick="guess(3)" onmousedown ="startTone(3)" onmouseup="stopTone()"></button>
-              <button id="bt4" onclick="guess(4)" onmousedown ="startTone(4)" onmouseup="stopTone()"></button>
+              <button id="bt1" onclick="guess(1)" onmousedown ="startTone(1); showImage(1)" onmouseup="stopTone();hideImage(1)">
+                <img id = "image1" src= "https://cdn.glitch.global/68bc9f72-7abd-4cf2-8f0f-59c2e266a2ce/husky.jpg?v=1649940862986" height = "180px" width = "180px" margin = "2px" align= "middle"/>
+              </button>
+            
+              <button id="bt2" onclick="guess(2)" onmousedown ="startTone(2); showImage(2)" onmouseup="stopTone();hideImage(2)">
+                <img id ="image2" src= "https://cdn.glitch.global/68bc9f72-7abd-4cf2-8f0f-59c2e266a2ce/chihuahua.jpg?v=1650069225196" height = "180px" width = "180px" margin = "2px" align= "middle"/>
+              </button>
+            
+              <button id="bt3" onclick="guess(3)" onmousedown ="startTone(3); showImage(3)" onmouseup="stopTone(); hideImage(3)">
+                <img id="image3" src= "https://cdn.glitch.global/68bc9f72-7abd-4cf2-8f0f-59c2e266a2ce/germanShepherd.jpg?v=1650069332868" height = "180px" width = "180px" margin = "2px" align= "middle"/>
+              </button>
+            
+              <button id="bt4" onclick="guess(4)" onmousedown ="startTone(4); showImage(4)" onmouseup="stopTone(); hideImage(4)">
+                <img id = "image4" src = "https://cdn.glitch.global/68bc9f72-7abd-4cf2-8f0f-59c2e266a2ce/poodle.jpg?v=1650069427152" height = "180px" width = "180px" margin = "2px" align= "middle"/>
+              </button>
             
               <br/>
             
-              <button id="bt5" onclick="guess(5)" onmousedown ="startTone(5)" onmouseup="stopTone()">
-               <!-- <img src = "https://live.staticflickr.com/3705/13492658484_a58dd56c59.jpg">-->
+              <button id="bt5" onclick="guess(5)" onmousedown ="startTone(5); showImage(5)" onmouseup="stopTone(); hideImage(5)">
+               <img id = "image5" src = "https://cdn.glitch.global/68bc9f72-7abd-4cf2-8f0f-59c2e266a2ce/bulldog.webp?v=1650069466147" height = "180px" width = "180px" margin = "2px" align= "middle"/>
               </button>
-              <button id="bt6" onclick="guess(6)" onmousedown ="startTone(6)" onmouseup="stopTone()" ></button>
-              <button id="bt7" onclick="guess(7)" onmousedown ="startTone(7)" onmouseup="stopTone()" ></button>
-              <button id="bt8" onclick="guess(8)" onmousedown ="startTone(8)" onmouseup="stopTone()" ></button>  
+              <button id="bt6" onclick="guess(6)" onmousedown ="startTone(6); showImage(6)" onmouseup="stopTone(); hideImage(6)" >
+                <img id = "image6" src="https://cdn.glitch.global/68bc9f72-7abd-4cf2-8f0f-59c2e266a2ce/terrier.jpg?v=1650069503312" height = "180px" width = "180px" margin = "2px" align= "middle"/>
+              </button>
+              <button id="bt7" onclick="guess(7)" onmousedown ="startTone(7); showImage(7)" onmouseup="stopTone(); hideImage(7)" >
+                <img id="image7" src= "https://cdn.glitch.global/68bc9f72-7abd-4cf2-8f0f-59c2e266a2ce/lab.jpg?v=1650069536342" height = "180px" width = "180px" margin = "2px" align= "middle"/>
+              </button>
+              <button class = "button" id="bt8" onclick="guess(8)" onmousedown ="startTone(8); showImage(8)" onmouseup="stopTone(); hideImage(8)" >
+                <img id ="image8" src="https://cdn.glitch.global/68bc9f72-7abd-4cf2-8f0f-59c2e266a2ce/stbernards.jpg?v=1650069569964" height = "180px" width = "180px" margin = "2px" align= "middle"/>
+              </button>  
             
             
           </div>

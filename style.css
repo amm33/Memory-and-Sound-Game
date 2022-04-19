@@ -96,6 +96,7 @@ button:hover{
 /*button colors*/ 
 #bt1{
   background-color: lightgreen; 
+  
 }
 
 
@@ -128,9 +129,19 @@ button:hover{
   background-color: tan; 
 }
 
+/*hides all the images*/
+
+img{
+  visibility: hidden
+}
+
+
+
+
+
 /*color when buttons are clicked*/ 
 #bt1:active, #bt1.lit{
-  background-color: green; 
+  background-color: green;
 }
 
 #bt2:active, #bt2.lit{
@@ -161,6 +172,15 @@ button:hover{
   background-color: sienna; 
 }
 
+/*
+.image {
+  visibility: hidden;
+}
+
+.button:active ~ .image{
+  visibility: visible;
+}
+*/
 
 
 /* Page structure */
