@@ -41,8 +41,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![] ![MemoryandSoundGame1](https://user-images.githubusercontent.com/89936921/158456369-9d166f28-77f1-471d-a856-83ad3f2125c8.gif)
-![] ![MemoryandSoundGame2](https://user-images.githubusercontent.com/89936921/158456492-4e83b453-b758-4551-8d04-fb192b40a1e1.gif)
+![x]] ![MemoryandSoundGame1](https://user-images.githubusercontent.com/89936921/158456369-9d166f28-77f1-471d-a856-83ad3f2125c8.gif)
+![x] ![MemoryandSoundGame2](https://user-images.githubusercontent.com/89936921/158456492-4e83b453-b758-4551-8d04-fb192b40a1e1.gif)
 
 
 ## Reflection Questions
